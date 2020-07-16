@@ -18,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/codenswan/09-Node.js-README-Generator/issues"
   },
-  "homepage": "https://github.com/codenswan/09-Node.js-README-Generator#readme"
+  "homepage": "https://github.com/codenswan/09-Node.js-README-Generator#readme",
+  "dependencies": {
+    "inquirer": "^7.3.2"
+  }
 }
