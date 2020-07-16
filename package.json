@@ -1,0 +1,22 @@
+{
+  "name": "09-node.js-readme-generator",
+  "version": "1.0.0",
+  "description": "Homework assignment",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/codenswan/09-Node.js-README-Generator.git"
+  },
+  "keywords": [
+    "Homework"
+  ],
+  "author": "Dan Swan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/codenswan/09-Node.js-README-Generator/issues"
+  },
+  "homepage": "https://github.com/codenswan/09-Node.js-README-Generator#readme"
+}
