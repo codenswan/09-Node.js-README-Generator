@@ -8,42 +8,46 @@ function promptUser() {
   return inquirer.prompt([
     {
       type: "input",
-      name: "name",
-      message: "What is your name?"
+      name: "title",
+      message: "Enter the title of your project:",
     },
     {
       type: "input",
-      name: "location",
-      message: "Where are you from?"
+      name: "description",
+      message: "Describe your project:",
     },
     {
       type: "input",
-      name: "hobby",
-      message: "What is your favorite hobby?"
+      name: "installation",
+      message: "What are the installation instructions?"
     },
     {
       type: "input",
-      name: "food",
-      message: "What is your favorite food?"
+      name: "GitHub",
+      message: "What is your GitHub username?:",
     },
     {
       type: "input",
-      name: "github",
-      message: "Enter your GitHub Username"
-    },
-    {
-      type: "input",
-      name: "linkedin",
-      message: "Enter your LinkedIn URL."
-    }
+      name: "email",
+      message: "What is your email address?:",
+    },  
   ]);
-}
+};
 
 function generateREADME(answers) {
-  return `##Name:
-${answers.name}
-##Location:
-${answers.location}`;
+  return `# Project Title:
+${answers.title}
+## Project Description:
+${answers.description}
+---
+## Table of Contents
+
+## Installation:
+    ${answers.installation}    
+---
+## Questions:
+Please contact me via email [mailto:${answers.email}] if you have any questions about this project.
+`;
 }
 
 async function init() {
