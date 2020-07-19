@@ -19,34 +19,34 @@ function promptUser() {
     {
       type: "input",
       name: "installation",
-      message: "What are the installation instructions?"
+      message: "What are the installation instructions?:"
     },
     {
      type: "input",
      name: "usage",
-     message: "Enter information about the usage", 
+     message: "Enter information about the usage:", 
     },
     {
       type: "input",
       name: "contribution",
-      message: "What is the contribution information?"
+      message: "What is the contribution information?:"
     },
     {
       type: "input",
       name: "test",
-      message: "What are the test instructions?"
+      message: "What are the test instructions?:"
     },
     {
       type: "list",
       name: "license",
-      message: "What license are you using?",
+      message: "What license are you using?:",
       choices: 
       [
         "MIT", 
-        "Mozilla Public 2.0", 
-        "Apache 2.0", 
-        "Boost Software 1.0",
-        "GNU GPLv3",
+        "MPL2.0", 
+        "Apache2.0", 
+        "ODbL",
+        "ISC",
       ]
     },
     {
@@ -62,30 +62,42 @@ function promptUser() {
   ]);
 };
 
+
+
 function generateREADME(answers) {
   return `# Project Title: ${answers.title}
-![${answers.license}](https://img.shields.io/github/license/codenswan/09-Node.js-README-Generator?style=flat)
+![License](https://img.shields.io/badge/License-${answers.license}-green)
+
+This project was developed by ${answers.GitHub}
 
 ### Table of Contents
-*[Description](# Project Description:)
-*[Install Instructions](# Installation:)
-*[Usage]()
-*[License]()
-*[Contributing]()
-*[Tests]()
-*[Questions](### Questions:)
+* [Description](#Description:)
+* [Install Instructions](#Installation:)
+* [Usage]()
+* [License]()
+* [Contributing]()
+* [Tests]()
+* [Questions](#Questions:)
 
-### Project Description:
+## Project Description:
 ${answers.description}
 
-### Installation:
+## Installation:
     ${answers.installation}
     
-### Usage:
+## Usage:
+${answers.usage}
 
+## Contribution and credits:
+${answers.contribution}
+
+## Tests:
+
+    ${answers.test}
 ---
-### Questions:
-Developed by ${answers.GitHub}. Please contact me via email [${answers.email}](mailto:${answers.email}) if you have any questions about this project.
+## Questions:
+Developed by ${answers.GitHub}. 
+If you have any further questions please contact at [rodger.swan@gmail.com](mailto:${answers.email}).
 `;
 }
 
