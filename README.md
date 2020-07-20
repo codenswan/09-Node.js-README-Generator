@@ -4,12 +4,12 @@
 This project was developed by codenswan.
 
 ### Table of Contents
-* [Description](#Description:)
-* [Install Instructions](#Installation:)
-* [Usage]()
-* [License]()
-* [Contributing]()
-* [Tests]()
+* [Description](#Description)
+* [Install Instructions](#Installation)
+* [Usage](#Usage)
+* [License](#License)
+* [Contributing](#Contribution)
+* [Tests](#Tests)
 * [Questions](#Questions:)
 
 ## Project Description:
