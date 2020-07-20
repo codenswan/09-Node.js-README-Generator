@@ -59,7 +59,7 @@ function generateREADME(answers) {
   return `# Project Title: ${answers.title}
 ![License](https://img.shields.io/badge/License-${answers.license}-green)
 
-This project was developed by ${answers.GitHub}.
+This project was developed by [${answers.GitHub}](https://github.com/${answers.GitHub}).
 
 ### Table of Contents
 * [Description](#Description)
