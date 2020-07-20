@@ -27,14 +27,11 @@ node index.js
 
 Here are some screenshots of the application. 
 
+This is the finished readme and a preview from vs code.
 ![](Assets/Screen%20Shot%202020-07-20%20at%206.24.15%20pm.png)
 
-This is the finished readme and a preview from vs code.
-
-
-![](Assets/Screen%20Shot%202020-07-20%20at%206.26.02%20pm.png)
-
 This is the finished inquirer in the terminal.
+![](Assets/Screen%20Shot%202020-07-20%20at%206.26.02%20pm.png)
 
 Here is a link to my [video demo](https://youtu.be/-EmBTYIDLuE)that demonstrates the working application.
 
