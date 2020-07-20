@@ -21,11 +21,13 @@ This is command-line application that uses inquirer to generate a readme file.
 ## Usage:
 Screen shots below.
 
+[Video demo](https://youtu.be/-EmBTYIDLuE)
+
 ## License:
 This application is licensed under MPL2.0.
 
 ## Contribution:
-Just me.
+For the information on markdown formatting I consulted the following [guide] (https://guides.github.com/features/mastering-markdown/). 
 
 ## Tests:
     npm run test
