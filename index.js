@@ -86,7 +86,6 @@ This application is licensed under ${answers.license}.
 ${answers.contribution}
 
 ## Tests:
-To run tests please enter the following into the command-line:
     ${answers.test}
 ---
 ## Questions:
