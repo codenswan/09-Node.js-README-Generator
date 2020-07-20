@@ -21,6 +21,8 @@ This is command-line application that uses inquirer to generate a readme file.
 ## Usage:
 Screen shots below.
 
+![](Assets/Screen%20Shot%202020-07-20%20at%206.24.15%20pm.png)
+
 [Video demo](https://youtu.be/-EmBTYIDLuE)
 
 ## License:
