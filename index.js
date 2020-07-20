@@ -19,35 +19,28 @@ function promptUser() {
     {
       type: "input",
       name: "installation",
-      message: "What are the installation instructions?:"
+      message: "What are the installation instructions?:",
     },
     {
-     type: "input",
-     name: "usage",
-     message: "Enter information about the usage:", 
+      type: "input",
+      name: "usage",
+      message: "Enter information about the usage:",
     },
     {
       type: "input",
       name: "contribution",
-      message: "What is the contribution information?:"
+      message: "What is the contribution information?:",
     },
     {
       type: "input",
       name: "test",
-      message: "What are the test instructions?:"
+      message: "What are the test instructions?:",
     },
     {
       type: "list",
       name: "license",
       message: "What license are you using?:",
-      choices: 
-      [
-        "MIT", 
-        "MPL2.0", 
-        "Apache2.0", 
-        "ODbL",
-        "ISC",
-      ]
+      choices: ["MIT", "MPL2.0", "Apache2.0", "ODbL", "ISC"],
     },
     {
       type: "input",
@@ -58,15 +51,15 @@ function promptUser() {
       type: "input",
       name: "email",
       message: "What is your email address?:",
-    },  
+    },
   ]);
-};
+}
 
 function generateREADME(answers) {
   return `# Project Title: ${answers.title}
 ![License](https://img.shields.io/badge/License-${answers.license}-green)
 
-This project was developed by ${answers.GitHub}
+This project was developed by ${answers.GitHub}.
 
 ### Table of Contents
 * [Description](#Description:)
@@ -88,6 +81,9 @@ After inquirer module is installed you can run the app by entering the following
 ## Usage:
 ${answers.usage}
 
+## License:
+This application is licensed under ${answers.license}.
+
 ## Contribution and credits:
 ${answers.contribution}
 
@@ -96,12 +92,12 @@ ${answers.contribution}
 ---
 ## Questions:
 Developed by ${answers.GitHub}. 
-If you have any further questions please contact at [rodger.swan@gmail.com](mailto:${answers.email}).
+If you have any further questions please contact me at [rodger.swan@gmail.com](mailto:${answers.email}).
 `;
 }
 
 async function init() {
-  console.log("hi")
+  console.log("hi");
   try {
     const answers = await promptUser();
 
@@ -110,7 +106,7 @@ async function init() {
     await writeFileAsync("README.md", readme);
 
     console.log("Successfully wrote your README file");
-  } catch(err) {
+  } catch (err) {
     console.log(err);
   }
 }
