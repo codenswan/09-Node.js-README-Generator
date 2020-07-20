@@ -62,8 +62,6 @@ function promptUser() {
   ]);
 };
 
-
-
 function generateREADME(answers) {
   return `# Project Title: ${answers.title}
 ![License](https://img.shields.io/badge/License-${answers.license}-green)
@@ -84,6 +82,8 @@ ${answers.description}
 
 ## Installation:
     ${answers.installation}
+After inquirer module is installed you can run the app by entering the following into the command line:
+    node index.js
     
 ## Usage:
 ${answers.usage}
@@ -92,7 +92,6 @@ ${answers.usage}
 ${answers.contribution}
 
 ## Tests:
-
     ${answers.test}
 ---
 ## Questions:
