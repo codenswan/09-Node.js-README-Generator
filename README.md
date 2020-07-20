@@ -1,7 +1,7 @@
 # Project Title: README generator
 ![License](https://img.shields.io/badge/License-MPL2.0-green)
 
-This project was developed by codenswan.
+This project was developed by [codenswan](https://github.com/codenswan).
 
 ### Table of Contents
 * [Description](#Description)
