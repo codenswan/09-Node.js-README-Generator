@@ -95,7 +95,7 @@ If you have any further questions please contact me at [rodger.swan@gmail.com](m
 }
 
 async function init() {
-  console.log("hi");
+  console.log("Please answer the following prompts to create your README.");
   try {
     const answers = await promptUser();
 
@@ -103,7 +103,7 @@ async function init() {
 
     await writeFileAsync("README.md", readme);
 
-    console.log("Successfully wrote your README file");
+    console.log("Good job. You have created your README.");
   } catch (err) {
     console.log(err);
   }
