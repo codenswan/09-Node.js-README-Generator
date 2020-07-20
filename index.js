@@ -62,21 +62,19 @@ function generateREADME(answers) {
 This project was developed by ${answers.GitHub}.
 
 ### Table of Contents
-* [Description](#Description:)
-* [Install Instructions](#Installation:)
-* [Usage]()
-* [License]()
-* [Contributing]()
-* [Tests]()
-* [Questions](#Questions:)
+* [Description](#Description)
+* [Install Instructions](#Installation)
+* [Usage](#Usage)
+* [License](#License)
+* [Contribution](#Contribution)
+* [Tests](#Tests)
+* [Questions](#Questions)
 
-## Project Description:
+## Description:
 ${answers.description}
 
 ## Installation:
     ${answers.installation}
-After inquirer module is installed you can run the app by entering the following into the command line:
-    node index.js
     
 ## Usage:
 ${answers.usage}
@@ -84,10 +82,11 @@ ${answers.usage}
 ## License:
 This application is licensed under ${answers.license}.
 
-## Contribution and credits:
+## Contribution:
 ${answers.contribution}
 
 ## Tests:
+To run tests please enter the following into the command-line:
     ${answers.test}
 ---
 ## Questions:
