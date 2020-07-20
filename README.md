@@ -27,7 +27,7 @@ Screen shots below.
 This application is licensed under MPL2.0.
 
 ## Contribution:
-For the information on markdown formatting I consulted the following [guide] (https://guides.github.com/features/mastering-markdown/). 
+For the information on markdown formatting I consulted the following [guide](https://guides.github.com/features/mastering-markdown/). 
 
 ## Tests:
     npm run test
